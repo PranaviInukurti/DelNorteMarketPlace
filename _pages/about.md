@@ -4,7 +4,8 @@ title: About Us
 permalink: /about/
 ---
 
-This website is made by Scrum Team Women in Stem with members Pranavi Inukurti, Shraddha Kadaba, Meena Annamalai, and Madhumita Narayan. 
+This website is made by Scrum Team Women in STEM with members Pranavi Inukurti, Shraddha Kadaba, Meena Annamalai, and Madhumita Narayan. 
+Scrum Team 5
 
 Team Roles:
 Scrum Master is Pranavi Inukurti
