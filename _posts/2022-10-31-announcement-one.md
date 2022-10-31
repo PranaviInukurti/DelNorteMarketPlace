@@ -1,5 +1,5 @@
 ---
-toc: true
+toc: false
 layout: post
 description: Lightly used. Perfect for AP Stats. 
 categories: [markdown]
