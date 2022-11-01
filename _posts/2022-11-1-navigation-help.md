@@ -17,3 +17,5 @@ As you can see, out website is a pretty easy-to-navigate website. However, if yo
 * On the Clothes and Supplies pages, the website will show different items that have been uploaded onto the website using the Add Listing page and are available to be purchased.
 * The tutoring page includes basic information of Del Norte's most reliable Tutoring clubs along with basic descriptions and contact information.
 * To search for a page or phrase you might need, use the Search button on the navigation bar in the top righthand corner. 
+
+We  hope this helps and have fun exploring our website!
