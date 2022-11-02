@@ -94,6 +94,17 @@
   
 
   
+      ,"page10": {
+          "title": "Supplies",
+          "content": "",
+          "url": "https://pranaviinukurti.github.io/DelNorteMarketPlace/supplies/",
+          "relUrl": "/supplies/",
+          "date": ""
+      }
+      
+  
+
+  
 
   
   
@@ -105,7 +116,7 @@
   
 
   
-      ,"page14": {
+      ,"page15": {
           "title": "",
           "content": "Sitemap: {{ “sitemap.xml” | absolute_url }} | .",
           "url": "https://pranaviinukurti.github.io/DelNorteMarketPlace/robots.txt",
