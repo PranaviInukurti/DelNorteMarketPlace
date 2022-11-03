@@ -1,3 +1,9 @@
+---
+layout: page
+title: Add Listing
+permalink: /addlisting/
+---
+
 <html>
 <body>
   <form onsubmit="javascript:handleClick();return false">
@@ -16,7 +22,7 @@
 	function handleClick() {
 		if (window.confirm('Click ok to view your listing')) 
 		{
-		window.location.href='https://mann223.github.io/fastpages/2022/10/01/dnMarketPlace.html';
+		window.location.href='https://pranaviinukurti.github.io/DelNorteMarketPlace/marketplace/';
 		};;
 	console.log("test");
 		var requestOptions = {

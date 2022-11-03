@@ -6,54 +6,69 @@ description: Fetch listing data from backend
 
 <html>
 <style>
-.myDiv {
-  border: 5px outset darkblue;
-  background-color: lightblue;    
-  text-align: left;
-}
+
 ul {
-	list-style-type: none;
+    list-style-type: none;
+}
+
+.card {
+  background-color: white;
+  color: #045D5D;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  transition: 0.3s;
+  width: 40%;
+}
+
+.card:hover {
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+.container {
+  padding: 2px 16px;
 }
 </style>
 <body>
-<div class="myDiv">
-<h1>DN Market Place</h1>
-<ul id="listings">
+<h1>Market Place</h1>
+<div id="listings" class="grid-container">
+</div>
 </ul>
 </div>
-​
+
 <script>
-  const ul = document.getElementById('listings');
-  const list = document.createDocumentFragment();
+  const resultContainer = document.getElementById('listings');
   const url = 'https://womeninstem.tk/api/listings/';
-​
+
   fetch(url)
     .then((response) => {
       return response.json();
     })
     .then((json) => {
       json.map(function(listing) {
-        let li = document.createElement('li');
-        let name = document.createElement('h2');
-		let price = document.createElement('h2');
-		let seller = document.createElement('h2');
-		let image = document.createElement('h2');
-    name.innerHTML = `${listing.name}`;
-		price.innerHTML = `${listing.price}`;
-		seller.innerHTML = `${listing.seller}`;
-		image.innerHTML = `${listing.image}`;
-        li.appendChild(name);
-		li.appendChild(price);
-		li.appendChild(seller);
-		li.appendChild(image);
-        list.appendChild(li);
-		ul.appendChild(list);
+        let listingCard = document.createElement('div');
+        listingCard.setAttribute("class", "card");
+        let name = document.createElement('h1');
+        let price = document.createElement('p');
+        let seller = document.createElement('p');
+        let image = document.createElement('p');
+
+
+        name.innerHTML = listing.name;
+        price.innerHTML = "Price: $"+listing.price;
+        seller.innerHTML = "Seller: "+listing.seller;
+        image.innerHTML = "Contact Information: "+listing.image;
+
+
+        listingCard.appendChild(name);
+        listingCard.appendChild(price);
+        listingCard.appendChild(seller);
+        listingCard.appendChild(image);
+        resultContainer.appendChild(listingCard);
       });
     })
     .catch(function(error) {
       console.log(error);
     });
-​
+
  
 </script>
 </body>
