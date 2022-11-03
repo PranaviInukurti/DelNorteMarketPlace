@@ -87,10 +87,10 @@
 
   
       ,"page7": {
-          "title": "Add Listing Notification",
+          "title": "Listings",
           "content": "DN Market Place . . .",
-          "url": "https://pranaviinukurti.github.io/DelNorteMarketPlace/notification/",
-          "relUrl": "/notification/",
+          "url": "https://pranaviinukurti.github.io/DelNorteMarketPlace/listings/",
+          "relUrl": "/listings/",
           "date": ""
       }
       
