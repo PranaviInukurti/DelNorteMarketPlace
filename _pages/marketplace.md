@@ -12,16 +12,16 @@ ul {
 }
 .grid-container {
   display: grid;
-  grid-template-columns: repeat(2, 0.5fr);
+  grid-template-columns: auto auto;
   gap: 10px;
   grid-auto-rows: minmax(100px, auto);
 }
 .card {
 	background-color: white;
 	color: #045D5D;
-	  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
-	  transition: 0.3s;
-	  width: 40%;
+	box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    width: 40%;
 	padding: 40px;
 }
 
