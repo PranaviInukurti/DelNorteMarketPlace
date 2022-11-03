@@ -14,7 +14,7 @@ permalink: /dnPostTest/
   <input type="text" id="price" name="price"><br><br>
   <label for="seller">Seller:</label>
   <input type="text" id="seller" name="seller"><br><br>
-  <label for="imageURL">Image URL:</label>
+  <label for="imageURL">Contact Info:</label>
   <input type="text" id="imageURL" name="imageURL"><br><br>
   <input type="submit" value="Submit">
 </form>
