@@ -10,7 +10,7 @@ permalink: /dnPostTest/
   <form onsubmit="javascript:handleClick();return false">
   <label for="object">Object:</label>
   <input type="text" id="object" name="object"><br><br>
-  <label for="price">Price:</label>
+  <label for="price">Price (no decimals):</label>
   <input type="text" id="price" name="price"><br><br>
   <label for="seller">Seller:</label>
   <input type="text" id="seller" name="seller"><br><br>
