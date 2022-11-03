@@ -2,17 +2,6 @@
   
     
         "post0": {
-            "title": "Post Listings",
-            "content": "Object: Price: Seller: Contact Information (email, social media, etc.): .",
-            "url": "https://pranaviinukurti.github.io/DelNorteMarketPlace/2022/11/02/dnposts.html",
-            "relUrl": "/2022/11/02/dnposts.html",
-            "date": " • Nov 2, 2022"
-        }
-        
-    
-  
-    
-        ,"post1": {
             "title": "Add Listing",
             "content": "DN Market Place . . ​ .",
             "url": "https://pranaviinukurti.github.io/DelNorteMarketPlace/2022/11/02/dnmarketplace.html",
@@ -23,7 +12,7 @@
     
   
     
-        ,"post2": {
+        ,"post1": {
             "title": "Welcome to Del Norte MarketPlace!",
             "content": "Here’s A Navigation Guide to Del Norte MarketPlace . This website was created by Period 2 Team 5. Our scrum team consists of Shraddha K, Pranavi I, Meena A, and Madhumita N. We have our individual team roles of Frontend Developer, Scrum Master, Backend Developer, and Deployment Manager. However, we all came together to work on both the frontend and backend that built this website. . So what was the reason as to why we even made this website? Well, we have always wanted a reliable and user friendly platform that has access to all facets of what a student would need throughout their years in Del Norte. Although the official Del Norte website includes this, there are a lot of links and external sources that a student needs to go to in order to accomplish different tasks. Hence, we decided to make our very own website for Del Norte: DN Market Place! . As you can see, out website is a pretty easy-to-navigate website. However, if you are facing some struggles, you have come to the right place! Here are the different features of our website and how to work them: . On the Homepage, we have our Announcements section. You can click on these links which take you to different pages with more details on newly updating information on our website. | On the Add Listing page, students who wish to sell items can choose to upload these items onto the website using this page. Simply add the basic information about your new listing and click on the Submit button. | On the Clothes and Supplies pages, the website will show different items that have been uploaded onto the website using the Add Listing page and are available to be purchased. | The tutoring page includes basic information of Del Norte’s most reliable Tutoring clubs along with basic descriptions and contact information. | To search for a page or phrase you might need, use the Search button on the navigation bar in the top righthand corner. | . We hope this helps and have fun exploring our website! .",
             "url": "https://pranaviinukurti.github.io/DelNorteMarketPlace/markdown/2022/11/01/navigation-help.html",
@@ -34,7 +23,7 @@
     
   
     
-        ,"post3": {
+        ,"post2": {
             "title": "Unused AP Bio Prep Book",
             "content": "Unused AP Bio Prep Book . . Unused AP Bio prep book. Bought this to prepare for the AP Exam but didn’t end up taking it. I am selling this for $15. Please reach out if you have any questions! .",
             "url": "https://pranaviinukurti.github.io/DelNorteMarketPlace/markdown/2022/10/31/announcement-two.html",
@@ -45,7 +34,7 @@
     
   
     
-        ,"post4": {
+        ,"post3": {
             "title": "Secondhand Graphing Calculator",
             "content": "Secondhand Graphing Calculator . . Lightly used. This calculator is perfect for AP Stats and AP Calc. This trusty gadget has gotten me through all four years of high school and I can’t wait for it to help someone else. I am selling it for $70. Please contact me for more details!! .",
             "url": "https://pranaviinukurti.github.io/DelNorteMarketPlace/markdown/2022/10/31/announcement-one.html",
@@ -58,9 +47,20 @@
 
   
   
+      ,"page0": {
+          "title": "Post Listings",
+          "content": "Object: Price: Seller: Contact Information (email, social media, etc.): .",
+          "url": "https://pranaviinukurti.github.io/DelNorteMarketPlace/_pages/2022-11-02-dnposts.html",
+          "relUrl": "/_pages/2022-11-02-dnposts.html",
+          "date": ""
+      }
+      
+  
 
   
-      ,"page1": {
+
+  
+      ,"page2": {
           "title": "Clothes",
           "content": ". Here is where Del Norte Students can post their secondhand or unused clothes ranging from extra PE clothes to Prom dresses for other DNHS students to use. .",
           "url": "https://pranaviinukurti.github.io/DelNorteMarketPlace/clothes/",
@@ -73,7 +73,7 @@
   
 
   
-      ,"page3": {
+      ,"page4": {
           "title": "Tutoring",
           "content": ". Here is where Del Norte Students can post their tutoring services for a variety of different subjects. Students who are looking for tutoring can also use this page to find a trusted tutor to help them score that A plus! .",
           "url": "https://pranaviinukurti.github.io/DelNorteMarketPlace/tutoring/",
@@ -84,7 +84,7 @@
   
 
   
-      ,"page4": {
+      ,"page5": {
           "title": "About Us",
           "content": "This website is made by Scrum Team Women in STEM with members Pranavi Inukurti, Shraddha Kadaba, Meena Annamalai, and Madhumita Narayan. Scrum Team 5 . Team Roles: Scrum Master is Pranavi Inukurti Deployment Manager is Madhumita Narayan Backend Developer is Meena Annamalai Frontend Developer is Shraddha Kadaba . The goal of this website is to provide a platform that is convenient and reliable for students in their purchases related to school. Whether it be school merch, or even help with academics, our website aims to provide aid to all of the Del Norte school body. .",
           "url": "https://pranaviinukurti.github.io/DelNorteMarketPlace/about/",
@@ -116,7 +116,7 @@
   
 
   
-      ,"page13": {
+      ,"page14": {
           "title": "",
           "content": "Sitemap: {{ “sitemap.xml” | absolute_url }} | .",
           "url": "https://pranaviinukurti.github.io/DelNorteMarketPlace/robots.txt",
