@@ -3,7 +3,7 @@
     
         "post0": {
             "title": "Add Listing",
-            "content": "DN Market Place . . ​ .",
+            "content": "Market Place . &lt;/ul&gt; &lt;/div&gt; .",
             "url": "https://pranaviinukurti.github.io/DelNorteMarketPlace/2022/11/02/dnmarketplace.html",
             "relUrl": "/2022/11/02/dnmarketplace.html",
             "date": " • Nov 2, 2022"
@@ -84,9 +84,20 @@
   
 
   
+      ,"page5": {
+          "title": "Add Listing",
+          "content": "Object: Price: Seller: Contact Information (email, social media, etc.): .",
+          "url": "https://pranaviinukurti.github.io/DelNorteMarketPlace/addlisting/",
+          "relUrl": "/addlisting/",
+          "date": ""
+      }
+      
+  
 
   
-      ,"page6": {
+
+  
+      ,"page7": {
           "title": "Market Place",
           "content": "Market Place . &lt;/ul&gt; &lt;/div&gt; .",
           "url": "https://pranaviinukurti.github.io/DelNorteMarketPlace/marketplace/",
@@ -116,7 +127,7 @@
   
 
   
-      ,"page14": {
+      ,"page15": {
           "title": "",
           "content": "Sitemap: {{ “sitemap.xml” | absolute_url }} | .",
           "url": "https://pranaviinukurti.github.io/DelNorteMarketPlace/robots.txt",
