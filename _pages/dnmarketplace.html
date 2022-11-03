@@ -4,20 +4,20 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="twitter:card" content="summary_large_image" /><!-- Begin Jekyll SEO tag v2.8.0 -->
-<title>Tutoring | DN Market Place</title>
+<title>Add Listing | DN Market Place</title>
 <meta name="generator" content="Jekyll v4.1.1" />
-<meta property="og:title" content="Tutoring" />
+<meta property="og:title" content="Add Listing" />
 <meta property="og:locale" content="en_US" />
-<meta name="description" content="This website is made by Scrum Team Women in STEM with members Pranavi Inukurti, Shraddha Kadaba, Meena Annamalai, and Madhumita Narayan." />
-<meta property="og:description" content="This website is made by Scrum Team Women in STEM with members Pranavi Inukurti, Shraddha Kadaba, Meena Annamalai, and Madhumita Narayan." />
-<link rel="canonical" href="https://pranaviinukurti.github.io/DelNorteMarketPlace/tutoring/" />
-<meta property="og:url" content="https://pranaviinukurti.github.io/DelNorteMarketPlace/tutoring/" />
+<meta name="description" content="Fetch listing data from backend" />
+<meta property="og:description" content="Fetch listing data from backend" />
+<link rel="canonical" href="https://pranaviinukurti.github.io/DelNorteMarketPlace/_pages/dnmarketplace.html" />
+<meta property="og:url" content="https://pranaviinukurti.github.io/DelNorteMarketPlace/_pages/dnmarketplace.html" />
 <meta property="og:site_name" content="DN Market Place" />
 <meta property="og:type" content="website" />
 <meta name="twitter:card" content="summary" />
-<meta property="twitter:title" content="Tutoring" />
+<meta property="twitter:title" content="Add Listing" />
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"WebPage","description":"This website is made by Scrum Team Women in STEM with members Pranavi Inukurti, Shraddha Kadaba, Meena Annamalai, and Madhumita Narayan.","headline":"Tutoring","url":"https://pranaviinukurti.github.io/DelNorteMarketPlace/tutoring/"}</script>
+{"@context":"https://schema.org","@type":"WebPage","description":"Fetch listing data from backend","headline":"Add Listing","url":"https://pranaviinukurti.github.io/DelNorteMarketPlace/_pages/dnmarketplace.html"}</script>
 <!-- End Jekyll SEO tag -->
 <link rel="stylesheet" href="/DelNorteMarketPlace/assets/css/style.css"><link type="application/atom+xml" rel="alternate" href="https://pranaviinukurti.github.io/DelNorteMarketPlace/feed.xml" title="DN Market Place" /><link rel="shortcut icon" type="image/x-icon" href="/DelNorteMarketPlace/images/favicon.ico"><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Primer/15.2.0/primer.css" integrity="sha512-xTz2ys4coGAOz8vuV1NcQBkgVmKhsSEtjbqyMJbBHRplFuvKIUo6xhLHpAyPt9mfR6twHJgn9OgVLuqOvjeBhg==" crossorigin="anonymous" />
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog==" crossorigin="anonymous" />
@@ -69,20 +69,81 @@ window.onload = wrap_img;
 </header>
 <main class="page-content" aria-label="Content">
       <div class="wrapper">
-        <article class="post">
-
-  <header class="post-header">
-    <h1 class="post-title">Tutoring</h1>
-  </header>
-
-  <div class="post-content">
-    <p><img src="/DelNorteMarketPlace/images/tutoring.png" alt="" /></p>
-
-<p>Here is where Del Norte Students can post their tutoring services for a variety of different subjects. Students who are looking for tutoring can also use this page to find a trusted tutor to help them score that A plus!</p>
-
-  </div>
-
-</article>
+        <html>
+<body>
+<h1>DN Market Place</h1>
+&lt;ul id=“listings”&gt;
+&lt;/ul&gt;
+<script>
+  const ul = document.getElementById(‘listings’);
+  const list = document.createDocumentFragment();
+  const url = ‘https://womeninstem.tk/api/listings/’;
+  fetch(url)
+    .then((response) => {
+      return response.json();
+    })
+    .then((json) => {
+      json.map(function(listing) {
+        let li = document.createElement(‘li’);
+        let name = document.createElement(‘h2’);
+        let price = document.createElement(‘h2’);
+        let seller = document.createElement(‘h2’);
+        let image = document.createElement(‘h2’);
+        name.innerHTML = ${listing.name};
+        price.innerHTML = ${listing.price};
+        seller.innerHTML = ${listing.seller};
+        image.innerHTML = ${listing.image};
+        li.appendChild(name);
+        li.appendChild(price);
+        li.appendChild(seller);
+        li.appendChild(image);
+        list.appendChild(li);
+        ul.appendChild(list);
+      });
+    })
+    .catch(function(error) {
+      console.log(error);
+    });
+</script>
+</body>
+</html>
+<p>white_check_mark
+eyes
+raised_hands
+9:44</p>
+<html>
+<body>
+  &lt;form onsubmit=“javascript:handleClick();return false”&gt;
+  &lt;label for=“object”&gt;Object:&lt;/label&gt;
+  &lt;input type=“text” id=“object” name=“object”&gt;<br /><br />
+  &lt;label for=“price”&gt;Price:&lt;/label&gt;
+  &lt;input type=“text” id=“price” name=“price”&gt;<br /><br />
+  &lt;label for=“seller”&gt;Seller:&lt;/label&gt;
+  &lt;input type=“text” id=“seller” name=“seller”&gt;<br /><br />
+  &lt;label for=“imageURL”&gt;Image URL:&lt;/label&gt;
+  &lt;input type=“text” id=“imageURL” name=“imageURL”&gt;<br /><br />
+  &lt;input type=“submit” value=“Submit”&gt;
+&lt;/form&gt;
+</body>
+<script>
+    function handleClick() {
+        if (window.confirm(‘If you click “ok” you would be redirected . Cancel will load this website ’))
+        {
+        window.location.href=‘https://mann223.github.io/fastpages/2022/10/01/dnMarketPlace.html’;
+        };;
+    console.log(“test”);
+        var requestOptions = {
+        method: ‘POST’,
+        redirect: ‘follow’
+        };
+        const item = document.getElementById(“object”).value;
+        const price = document.getElementById(“price”).value;
+        const seller = document.getElementById(“seller”).value;
+        const imageURL = ‘&url=’ + encodeURIComponent(document.getElementById(“imageURL”).value);
+        fetch(`https://womeninstem.tk/api/listings/create/${item}/${price}/${seller}/${imageURL}`, requestOptions)
+    }
+</script>
+</html>
 
       </div>
     </main><footer class="site-footer h-card">

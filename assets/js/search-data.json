@@ -73,6 +73,28 @@
   
 
   
+      ,"page5": {
+          "title": "Add Listing",
+          "content": "DN Market Place . &lt;ul id=“listings”&gt; &lt;/ul&gt; . white_check_mark eyes raised_hands 9:44 . &lt;form onsubmit=“javascript:handleClick();return false”&gt; &lt;label for=“object”&gt;Object:&lt;/label&gt; &lt;input type=“text” id=“object” name=“object”&gt; &lt;label for=“price”&gt;Price:&lt;/label&gt; &lt;input type=“text” id=“price” name=“price”&gt; &lt;label for=“seller”&gt;Seller:&lt;/label&gt; &lt;input type=“text” id=“seller” name=“seller”&gt; &lt;label for=“imageURL”&gt;Image URL:&lt;/label&gt; &lt;input type=“text” id=“imageURL” name=“imageURL”&gt; &lt;input type=“submit” value=“Submit”&gt; &lt;/form&gt; .",
+          "url": "https://pranaviinukurti.github.io/DelNorteMarketPlace/_pages/dnmarketplace.html",
+          "relUrl": "/_pages/dnmarketplace.html",
+          "date": ""
+      }
+      
+  
+
+  
+      ,"page6": {
+          "title": "Post Listings",
+          "content": "&lt;form onsubmit=“javascript:handleClick();return false”&gt; &lt;label for=“object”&gt;Object:&lt;/label&gt; &lt;input type=“text” id=“object” name=“object”&gt; &lt;label for=“price”&gt;Price:&lt;/label&gt; &lt;input type=“text” id=“price” name=“price”&gt; &lt;label for=“seller”&gt;Seller:&lt;/label&gt; &lt;input type=“text” id=“seller” name=“seller”&gt; &lt;label for=“imageURL”&gt;Image URL:&lt;/label&gt; &lt;input type=“text” id=“imageURL” name=“imageURL”&gt; &lt;input type=“submit” value=“Submit”&gt; &lt;/form&gt; .",
+          "url": "https://pranaviinukurti.github.io/DelNorteMarketPlace/_pages/dnposts.html",
+          "relUrl": "/_pages/dnposts.html",
+          "date": ""
+      }
+      
+  
+
+  
 
   
   
@@ -94,7 +116,7 @@
   
 
   
-      ,"page13": {
+      ,"page15": {
           "title": "",
           "content": "Sitemap: {{ “sitemap.xml” | absolute_url }} | .",
           "url": "https://pranaviinukurti.github.io/DelNorteMarketPlace/robots.txt",
