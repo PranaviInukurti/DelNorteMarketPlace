@@ -20,7 +20,7 @@ permalink: /AddListing/
 </body>
 <script>
 	function handleClick() {
-	alert("listing created");
+	alert("Your listing was created.");
 	console.log("test");
 		var requestOptions = {
 		method: 'POST',
@@ -31,7 +31,6 @@ permalink: /AddListing/
 		const price = document.getElementById("price").value;
 		const seller = document.getElementById("seller").value;
 		const imageURL = document.getElementById("imageURL").value;
-
 		fetch(`https://womeninstem.tk/api/listings/create/${item}/${price}/${seller}/${imageURL}`, requestOptions)
 	}
 </script>
