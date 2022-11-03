@@ -36,7 +36,7 @@ permalink: /dnPostTest/
 		const item = document.getElementById("object").value;
 		const price = document.getElementById("price").value;
 		const seller = document.getElementById("seller").value;
-		const imageURL = '&url=' + encodeURIComponent(document.getElementById("imageURL").value);
+		const imageURL = document.getElementById("imageURL").value;
 		
 
 		fetch(`https://womeninstem.tk/api/listings/create/${item}/${price}/${seller}/${imageURL}`, requestOptions)
