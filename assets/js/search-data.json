@@ -86,6 +86,22 @@
   
 
   
+      ,"page6": {
+          "title": "Market Place",
+          "content": "Market Place . &lt;/ul&gt; &lt;/div&gt; .",
+          "url": "https://pranaviinukurti.github.io/DelNorteMarketPlace/marketplace/",
+          "relUrl": "/marketplace/",
+          "date": ""
+      }
+      
+  
+
+  
+  
+
+  
+
+  
   
 
   
@@ -94,18 +110,13 @@
   
 
   
-
-  
   
 
   
   
 
   
-  
-
-  
-      ,"page13": {
+      ,"page14": {
           "title": "",
           "content": "Sitemap: {{ “sitemap.xml” | absolute_url }} | .",
           "url": "https://pranaviinukurti.github.io/DelNorteMarketPlace/robots.txt",

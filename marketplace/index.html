@@ -4,22 +4,20 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="twitter:card" content="summary_large_image" /><!-- Begin Jekyll SEO tag v2.8.0 -->
-<title>DN Market Place | This website is made by Scrum Team Women in STEM with members Pranavi Inukurti, Shraddha Kadaba, Meena Annamalai, and Madhumita Narayan.</title>
+<title>Market Place | DN Market Place</title>
 <meta name="generator" content="Jekyll v4.1.1" />
-<meta property="og:title" content="DN Market Place" />
+<meta property="og:title" content="Market Place" />
 <meta property="og:locale" content="en_US" />
 <meta name="description" content="This website is made by Scrum Team Women in STEM with members Pranavi Inukurti, Shraddha Kadaba, Meena Annamalai, and Madhumita Narayan." />
 <meta property="og:description" content="This website is made by Scrum Team Women in STEM with members Pranavi Inukurti, Shraddha Kadaba, Meena Annamalai, and Madhumita Narayan." />
-<link rel="canonical" href="https://pranaviinukurti.github.io/DelNorteMarketPlace/" />
-<meta property="og:url" content="https://pranaviinukurti.github.io/DelNorteMarketPlace/" />
+<link rel="canonical" href="https://pranaviinukurti.github.io/DelNorteMarketPlace/marketplace/" />
+<meta property="og:url" content="https://pranaviinukurti.github.io/DelNorteMarketPlace/marketplace/" />
 <meta property="og:site_name" content="DN Market Place" />
-<meta property="og:image" content="https://pranaviinukurti.github.io/DelNorteMarketPlace/images/logo.png" />
 <meta property="og:type" content="website" />
-<meta name="twitter:card" content="summary_large_image" />
-<meta property="twitter:image" content="https://pranaviinukurti.github.io/DelNorteMarketPlace/images/logo.png" />
-<meta property="twitter:title" content="DN Market Place" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="Market Place" />
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"WebSite","description":"This website is made by Scrum Team Women in STEM with members Pranavi Inukurti, Shraddha Kadaba, Meena Annamalai, and Madhumita Narayan.","headline":"DN Market Place","image":"https://pranaviinukurti.github.io/DelNorteMarketPlace/images/logo.png","name":"DN Market Place","url":"https://pranaviinukurti.github.io/DelNorteMarketPlace/"}</script>
+{"@context":"https://schema.org","@type":"WebPage","description":"This website is made by Scrum Team Women in STEM with members Pranavi Inukurti, Shraddha Kadaba, Meena Annamalai, and Madhumita Narayan.","headline":"Market Place","url":"https://pranaviinukurti.github.io/DelNorteMarketPlace/marketplace/"}</script>
 <!-- End Jekyll SEO tag -->
 <link rel="stylesheet" href="/DelNorteMarketPlace/assets/css/style.css"><link type="application/atom+xml" rel="alternate" href="https://pranaviinukurti.github.io/DelNorteMarketPlace/feed.xml" title="DN Market Place" /><link rel="shortcut icon" type="image/x-icon" href="/DelNorteMarketPlace/images/favicon.ico"><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Primer/15.2.0/primer.css" integrity="sha512-xTz2ys4coGAOz8vuV1NcQBkgVmKhsSEtjbqyMJbBHRplFuvKIUo6xhLHpAyPt9mfR6twHJgn9OgVLuqOvjeBhg==" crossorigin="anonymous" />
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog==" crossorigin="anonymous" />
@@ -71,53 +69,73 @@ window.onload = wrap_img;
 </header>
 <main class="page-content" aria-label="Content">
       <div class="wrapper">
-        <div class="home"><p><img src="images/welcometodnmarketplace.png" /></p>
+        <article class="post">
 
-<p>This website is made by Scrum Team Women in STEM with members Pranavi Inukurti, Shraddha Kadaba, Meena Annamalai, and Madhumita Narayan.</p>
+  <header class="post-header">
+    <h1 class="post-title">Market Place</h1>
+  </header>
 
-<h1 id="announcements">Announcements</h1>
+  <div class="post-content">
+    <html>
+<style>
+ul {
+    list-style-type: none;
+}
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  transition: 0.3s;
+  width: 40%;
+}
+.card:hover {
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+.container {
+  padding: 2px 16px;
+}
+</style>
+<body>
+<h1>Market Place</h1>
+<div id="listings" class="grid-container">
+</div>
+&lt;/ul&gt;
+&lt;/div&gt;
+<script>
+  const resultContainer = document.getElementById('listings');
+  const url = 'https://womeninstem.tk/api/listings/';
+  fetch(url)
+    .then((response) => {
+      return response.json();
+    })
+    .then((json) => {
+      json.map(function(listing) {
+        let listingCard = document.createElement('div');
+		listingCard.setAttribute("class", "card");
+        let name = document.createElement('h1');
+        let price = document.createElement('p');
+        let seller = document.createElement('p');
+        let image = document.createElement('p');
+        name.innerHTML = listing.name;
+        price.innerHTML = listing.price;
+        seller.innerHTML = listing.seller;
+        image.innerHTML = listing.image;
+        listingCard.appendChild(name);
+        listingCard.appendChild(price);
+        listingCard.appendChild(seller);
+        listingCard.appendChild(image);
+        resultContainer.appendChild(listingCard);
+      });
+    })
+    .catch(function(error) {
+      console.log(error);
+    });
+</script>
+</body>
+</html>
 
+  </div>
 
+</article>
 
-  
-
-  <!-- Hide posts if front matter flag hide:true -->
-  
-  
-
-  <!-- Sort posts by rank, then date -->
-  
-  
-  
-
- 
-  
-
-   <!-- Assemble final sorted posts array -->
-  
-  <ul class="post-list"><li><h3>
-    <a class="post-link" href="/DelNorteMarketPlace/2022/11/02/dnmarketplace.html">
-    Add Listing
-    </a>
-</h3><p class="post-meta-description">Fetch listing data from backend</p><p class="post-meta">Nov 2, 2022</p>
-</li><li><h3>
-    <a class="post-link" href="/DelNorteMarketPlace/markdown/2022/11/01/navigation-help.html">
-    Welcome to Del Norte MarketPlace!
-    </a>
-</h3><p class="post-meta-description">A post to help with navigation in our website</p><p class="post-meta">Nov 1, 2022</p>
-</li><li><h3>
-    <a class="post-link" href="/DelNorteMarketPlace/markdown/2022/10/31/announcement-two.html">
-    Unused AP Bio Prep Book
-    </a>
-</h3><p class="post-meta-description">Ace the AP Exam!</p><p class="post-meta">Oct 31, 2022</p>
-</li><li><h3>
-    <a class="post-link" href="/DelNorteMarketPlace/markdown/2022/10/31/announcement-one.html">
-    Secondhand Graphing Calculator
-    </a>
-</h3><p class="post-meta-description">Lightly used. Perfect for AP Stats.</p><p class="post-meta">Oct 31, 2022</p>
-</li></ul>
-
-    </div>
       </div>
     </main><footer class="site-footer h-card">
   <data class="u-url" href="/DelNorteMarketPlace/"></data>
