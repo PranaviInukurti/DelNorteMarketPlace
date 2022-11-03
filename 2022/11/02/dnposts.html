@@ -72,32 +72,40 @@ window.onload = wrap_img;
       <div class="wrapper">
         <html>
 <body>
-  &lt;form onsubmit=“javascript:handleClick();return false”&gt;
-  &lt;label for=“object”&gt;Object:&lt;/label&gt;
-  &lt;input type=“text” id=“object” name=“object”&gt;<br /><br />
-  &lt;label for=“price”&gt;Price:&lt;/label&gt;
-  &lt;input type=“text” id=“price” name=“price”&gt;<br /><br />
-  &lt;label for=“seller”&gt;Seller:&lt;/label&gt;
-  &lt;input type=“text” id=“seller” name=“seller”&gt;<br /><br />
-  &lt;label for=“imageURL”&gt;Image URL:&lt;/label&gt;
-  &lt;input type=“text” id=“imageURL” name=“imageURL”&gt;<br /><br />
-  &lt;input type=“submit” value=“Submit”&gt;
-&lt;/form&gt;
+  <form onsubmit="javascript:handleClick();return false">
+  <label for="object">Object:</label>
+  <input type="text" id="object" name="object" /><br /><br />
+  <label for="price">Price:</label>
+  <input type="text" id="price" name="price" /><br /><br />
+  <label for="seller">Seller:</label>
+  <input type="text" id="seller" name="seller" /><br /><br />
+  <label for="imageURL">Image URL:</label>
+  <input type="text" id="imageURL" name="imageURL" /><br /><br />
+  <input type="submit" value="Submit" />
+</form>
 </body>
 <script>
-    function handleClick() {
-    alert(“listing created”);
-    console.log(“test”);
-        var requestOptions = {
-        method: ‘POST’,
-        redirect: ‘follow’
-        };
-        const item = document.getElementById(“object”).value;
-        const price = document.getElementById(“price”).value;
-        const seller = document.getElementById(“seller”).value;
-        const imageURL = document.getElementById(“imageURL”).value;
-        fetch(`https://womeninstem.tk/api/listings/create/${item}/${price}/${seller}/${imageURL}`, requestOptions)
-    }
+	function handleClick() {
+	
+		if (window.confirm('Click ok to view your listing')) 
+		{
+		window.location.href='https://mann223.github.io/fastpages/2022/10/01/dnMarketPlace.html';
+		};;
+	
+	console.log("test");
+		var requestOptions = {
+		method: 'POST',
+		redirect: 'follow'
+		};
+		
+		const item = document.getElementById("object").value;
+		const price = document.getElementById("price").value;
+		const seller = document.getElementById("seller").value;
+		const imageURL = '&url=' + encodeURIComponent(document.getElementById("imageURL").value);
+		
+​
+		fetch(`https://womeninstem.tk/api/listings/create/${item}/${price}/${seller}/${imageURL}`, requestOptions)
+	}
 </script>
 </html>
 

@@ -3,7 +3,7 @@
     
         "post0": {
             "title": "Post Listings",
-            "content": "&lt;form onsubmit=“javascript:handleClick();return false”&gt; &lt;label for=“object”&gt;Object:&lt;/label&gt; &lt;input type=“text” id=“object” name=“object”&gt; &lt;label for=“price”&gt;Price:&lt;/label&gt; &lt;input type=“text” id=“price” name=“price”&gt; &lt;label for=“seller”&gt;Seller:&lt;/label&gt; &lt;input type=“text” id=“seller” name=“seller”&gt; &lt;label for=“imageURL”&gt;Image URL:&lt;/label&gt; &lt;input type=“text” id=“imageURL” name=“imageURL”&gt; &lt;input type=“submit” value=“Submit”&gt; &lt;/form&gt; .",
+            "content": "Object: Price: Seller: Image URL: .",
             "url": "https://pranaviinukurti.github.io/DelNorteMarketPlace/2022/11/02/dnposts.html",
             "relUrl": "/2022/11/02/dnposts.html",
             "date": " • Nov 2, 2022"
@@ -14,7 +14,7 @@
     
         ,"post1": {
             "title": "Add Listing",
-            "content": "DN Market Place . &lt;ul id=“listings”&gt; &lt;/ul&gt; . white_check_mark eyes raised_hands 9:44 . &lt;form onsubmit=“javascript:handleClick();return false”&gt; &lt;label for=“object”&gt;Object:&lt;/label&gt; &lt;input type=“text” id=“object” name=“object”&gt; &lt;label for=“price”&gt;Price:&lt;/label&gt; &lt;input type=“text” id=“price” name=“price”&gt; &lt;label for=“seller”&gt;Seller:&lt;/label&gt; &lt;input type=“text” id=“seller” name=“seller”&gt; &lt;label for=“imageURL”&gt;Image URL:&lt;/label&gt; &lt;input type=“text” id=“imageURL” name=“imageURL”&gt; &lt;input type=“submit” value=“Submit”&gt; &lt;/form&gt; .",
+            "content": "DN Market Place . . ​ .",
             "url": "https://pranaviinukurti.github.io/DelNorteMarketPlace/2022/11/02/dnmarketplace.html",
             "relUrl": "/2022/11/02/dnmarketplace.html",
             "date": " • Nov 2, 2022"
