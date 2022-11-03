@@ -1,7 +1,7 @@
 ---
 title: Post Listings
 layout: default
-description: Post Listings
+permalink: /dnPostTest/
 ---
 
 
@@ -24,7 +24,7 @@ description: Post Listings
 	
 		if (window.confirm('Click ok to view your listing')) 
 		{
-		window.location.href='https://mann223.github.io/fastpages/2022/10/01/dnMarketPlace.html';
+		window.location.href='https://pranaviinukurti.github.io/DelNorteMarketPlace/marketplace/';
 		};;
 	
 	console.log("test");

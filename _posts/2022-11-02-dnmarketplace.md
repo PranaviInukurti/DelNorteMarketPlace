@@ -10,13 +10,19 @@ description: Fetch listing data from backend
 ul {
     list-style-type: none;
 }
-
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+  grid-auto-rows: minmax(100px, auto);
+}
 .card {
-  background-color: white;
-  color: #045D5D;
-  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
-  transition: 0.3s;
-  width: 40%;
+	background-color: white;
+	color: #045D5D;
+	  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+	  transition: 0.3s;
+	  width: 40%;
+	padding: 10px;
 }
 
 .card:hover {
@@ -45,7 +51,7 @@ ul {
     .then((json) => {
       json.map(function(listing) {
         let listingCard = document.createElement('div');
-        listingCard.setAttribute("class", "card");
+		listingCard.setAttribute("class", "card");
         let name = document.createElement('h1');
         let price = document.createElement('p');
         let seller = document.createElement('p');
@@ -69,7 +75,7 @@ ul {
       console.log(error);
     });
 
- 
+    
 </script>
 </body>
 </html>
