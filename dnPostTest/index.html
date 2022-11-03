@@ -64,7 +64,7 @@ window.onload = wrap_img;
           </span>
         </label>
 
-        <div class="trigger"><a class="page-link" href="/DelNorteMarketPlace/clothes/">Clothes</a><a class="page-link" href="/DelNorteMarketPlace/Supplies/">Supplies</a><a class="page-link" href="/DelNorteMarketPlace/tutoring/">Tutoring</a><a class="page-link" href="/DelNorteMarketPlace/about/">About Us</a><a class="page-link" href="/DelNorteMarketPlace/addlisting/">Add Listing</a><a class="page-link" href="/DelNorteMarketPlace/dnPostTest/">Post Listings</a><a class="page-link" href="/DelNorteMarketPlace/marketplace/">Market Place</a><a class="page-link" href="/DelNorteMarketPlace/search/">Search</a><a class="page-link" href="/DelNorteMarketPlace/categories/">Tags</a></div>
+        <div class="trigger"><a class="page-link" href="/DelNorteMarketPlace/clothes/">Clothes</a><a class="page-link" href="/DelNorteMarketPlace/Supplies/">Supplies</a><a class="page-link" href="/DelNorteMarketPlace/tutoring/">Tutoring</a><a class="page-link" href="/DelNorteMarketPlace/about/">About Us</a><a class="page-link" href="/DelNorteMarketPlace/dnPostTest/">Post Listings</a><a class="page-link" href="/DelNorteMarketPlace/marketplace/">Add Listing</a><a class="page-link" href="/DelNorteMarketPlace/search/">Search</a><a class="page-link" href="/DelNorteMarketPlace/categories/">Tags</a></div>
       </nav></div>
 </header>
 <main class="page-content" aria-label="Content">
@@ -100,7 +100,7 @@ window.onload = wrap_img;
 		const item = document.getElementById("object").value;
 		const price = document.getElementById("price").value;
 		const seller = document.getElementById("seller").value;
-		const imageURL = '&url=' + encodeURIComponent(document.getElementById("imageURL").value);
+		const imageURL = document.getElementById("imageURL").value;
 		
 
 		fetch(`https://womeninstem.tk/api/listings/create/${item}/${price}/${seller}/${imageURL}`, requestOptions)

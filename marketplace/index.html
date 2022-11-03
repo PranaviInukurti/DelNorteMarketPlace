@@ -4,9 +4,9 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="twitter:card" content="summary_large_image" /><!-- Begin Jekyll SEO tag v2.8.0 -->
-<title>Market Place | DN Market Place</title>
+<title>Add Listing | DN Market Place</title>
 <meta name="generator" content="Jekyll v4.1.1" />
-<meta property="og:title" content="Market Place" />
+<meta property="og:title" content="Add Listing" />
 <meta property="og:locale" content="en_US" />
 <meta name="description" content="This website is made by Scrum Team Women in STEM with members Pranavi Inukurti, Shraddha Kadaba, Meena Annamalai, and Madhumita Narayan." />
 <meta property="og:description" content="This website is made by Scrum Team Women in STEM with members Pranavi Inukurti, Shraddha Kadaba, Meena Annamalai, and Madhumita Narayan." />
@@ -15,9 +15,9 @@
 <meta property="og:site_name" content="DN Market Place" />
 <meta property="og:type" content="website" />
 <meta name="twitter:card" content="summary" />
-<meta property="twitter:title" content="Market Place" />
+<meta property="twitter:title" content="Add Listing" />
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"WebPage","description":"This website is made by Scrum Team Women in STEM with members Pranavi Inukurti, Shraddha Kadaba, Meena Annamalai, and Madhumita Narayan.","headline":"Market Place","url":"https://pranaviinukurti.github.io/DelNorteMarketPlace/marketplace/"}</script>
+{"@context":"https://schema.org","@type":"WebPage","description":"This website is made by Scrum Team Women in STEM with members Pranavi Inukurti, Shraddha Kadaba, Meena Annamalai, and Madhumita Narayan.","headline":"Add Listing","url":"https://pranaviinukurti.github.io/DelNorteMarketPlace/marketplace/"}</script>
 <!-- End Jekyll SEO tag -->
 <link rel="stylesheet" href="/DelNorteMarketPlace/assets/css/style.css"><link type="application/atom+xml" rel="alternate" href="https://pranaviinukurti.github.io/DelNorteMarketPlace/feed.xml" title="DN Market Place" /><link rel="shortcut icon" type="image/x-icon" href="/DelNorteMarketPlace/images/favicon.ico"><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Primer/15.2.0/primer.css" integrity="sha512-xTz2ys4coGAOz8vuV1NcQBkgVmKhsSEtjbqyMJbBHRplFuvKIUo6xhLHpAyPt9mfR6twHJgn9OgVLuqOvjeBhg==" crossorigin="anonymous" />
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog==" crossorigin="anonymous" />
@@ -64,31 +64,36 @@ window.onload = wrap_img;
           </span>
         </label>
 
-        <div class="trigger"><a class="page-link" href="/DelNorteMarketPlace/clothes/">Clothes</a><a class="page-link" href="/DelNorteMarketPlace/Supplies/">Supplies</a><a class="page-link" href="/DelNorteMarketPlace/tutoring/">Tutoring</a><a class="page-link" href="/DelNorteMarketPlace/about/">About Us</a><a class="page-link" href="/DelNorteMarketPlace/addlisting/">Add Listing</a><a class="page-link" href="/DelNorteMarketPlace/dnPostTest/">Post Listings</a><a class="page-link" href="/DelNorteMarketPlace/marketplace/">Market Place</a><a class="page-link" href="/DelNorteMarketPlace/search/">Search</a><a class="page-link" href="/DelNorteMarketPlace/categories/">Tags</a></div>
+        <div class="trigger"><a class="page-link" href="/DelNorteMarketPlace/clothes/">Clothes</a><a class="page-link" href="/DelNorteMarketPlace/Supplies/">Supplies</a><a class="page-link" href="/DelNorteMarketPlace/tutoring/">Tutoring</a><a class="page-link" href="/DelNorteMarketPlace/about/">About Us</a><a class="page-link" href="/DelNorteMarketPlace/dnPostTest/">Post Listings</a><a class="page-link" href="/DelNorteMarketPlace/marketplace/">Add Listing</a><a class="page-link" href="/DelNorteMarketPlace/search/">Search</a><a class="page-link" href="/DelNorteMarketPlace/categories/">Tags</a></div>
       </nav></div>
 </header>
 <main class="page-content" aria-label="Content">
       <div class="wrapper">
-        <article class="post">
-
-  <header class="post-header">
-    <h1 class="post-title">Market Place</h1>
-  </header>
-
-  <div class="post-content">
-    <html>
+        <html>
 <style>
+
 ul {
     list-style-type: none;
 }
-.card {
-  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
-  transition: 0.3s;
-  width: 40%;
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+  grid-auto-rows: minmax(100px, auto);
 }
+.card {
+	background-color: white;
+	color: #045D5D;
+	  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+	  transition: 0.3s;
+	  width: 40%;
+	padding: 10px;
+}
+
 .card:hover {
   box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
 }
+
 .container {
   padding: 2px 16px;
 }
@@ -97,11 +102,12 @@ ul {
 <h1>Market Place</h1>
 <div id="listings" class="grid-container">
 </div>
-&lt;/ul&gt;
-&lt;/div&gt;
+
+
 <script>
   const resultContainer = document.getElementById('listings');
   const url = 'https://womeninstem.tk/api/listings/';
+
   fetch(url)
     .then((response) => {
       return response.json();
@@ -114,10 +120,14 @@ ul {
         let price = document.createElement('p');
         let seller = document.createElement('p');
         let image = document.createElement('p');
+
+
         name.innerHTML = listing.name;
-        price.innerHTML = listing.price;
-        seller.innerHTML = listing.seller;
-        image.innerHTML = listing.image;
+        price.innerHTML = "Price: $"+listing.price;
+        seller.innerHTML = "Seller: "+listing.seller;
+        image.innerHTML = "Contact Information: "+listing.image;
+
+
         listingCard.appendChild(name);
         listingCard.appendChild(price);
         listingCard.appendChild(seller);
@@ -128,13 +138,11 @@ ul {
     .catch(function(error) {
       console.log(error);
     });
+
+
 </script>
 </body>
 </html>
-
-  </div>
-
-</article>
 
       </div>
     </main><footer class="site-footer h-card">
