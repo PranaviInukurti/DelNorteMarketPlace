@@ -1,5 +1,5 @@
 ---
-title: Add Listing
+title: Market Place
 layout: default
 permalink: /marketplace/
 ---
