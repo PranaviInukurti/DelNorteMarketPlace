@@ -7,6 +7,7 @@ permalink: /marketplace/
 <html>
 <style>
 
+
 ul {
     list-style-type: none;
 }
@@ -19,9 +20,9 @@ ul {
 .card {
 	background-color: white;
 	color: #045D5D;
-	box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
-    transition: 0.3s;
-    width: 40%;
+	  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+	  transition: 0.3s;
+	  width: 75%;
 	padding: 40px;
 }
 
@@ -37,8 +38,8 @@ ul {
 <h1>Market Place</h1>
 <div id="listings" class="grid-container">
 </div>
-
-
+</ul>
+</div>
 <script>
   const resultContainer = document.getElementById('listings');
   const url = 'https://womeninstem.tk/api/listings/';
@@ -74,7 +75,7 @@ ul {
       console.log(error);
     });
 
-
+    
 </script>
 </body>
 </html>
