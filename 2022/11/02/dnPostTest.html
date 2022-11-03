@@ -4,22 +4,21 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="twitter:card" content="summary_large_image" /><!-- Begin Jekyll SEO tag v2.8.0 -->
-<title>DN Market Place | This website is made by Scrum Team Women in STEM with members Pranavi Inukurti, Shraddha Kadaba, Meena Annamalai, and Madhumita Narayan.</title>
+<title>Post Listings | DN Market Place</title>
 <meta name="generator" content="Jekyll v4.1.1" />
-<meta property="og:title" content="DN Market Place" />
+<meta property="og:title" content="Post Listings" />
 <meta property="og:locale" content="en_US" />
-<meta name="description" content="This website is made by Scrum Team Women in STEM with members Pranavi Inukurti, Shraddha Kadaba, Meena Annamalai, and Madhumita Narayan." />
-<meta property="og:description" content="This website is made by Scrum Team Women in STEM with members Pranavi Inukurti, Shraddha Kadaba, Meena Annamalai, and Madhumita Narayan." />
-<link rel="canonical" href="https://pranaviinukurti.github.io/DelNorteMarketPlace/" />
-<meta property="og:url" content="https://pranaviinukurti.github.io/DelNorteMarketPlace/" />
+<meta name="description" content="Post Listings" />
+<meta property="og:description" content="Post Listings" />
+<link rel="canonical" href="https://pranaviinukurti.github.io/DelNorteMarketPlace/2022/11/02/dnPostTest.html" />
+<meta property="og:url" content="https://pranaviinukurti.github.io/DelNorteMarketPlace/2022/11/02/dnPostTest.html" />
 <meta property="og:site_name" content="DN Market Place" />
-<meta property="og:image" content="https://pranaviinukurti.github.io/DelNorteMarketPlace/images/logo.png" />
-<meta property="og:type" content="website" />
-<meta name="twitter:card" content="summary_large_image" />
-<meta property="twitter:image" content="https://pranaviinukurti.github.io/DelNorteMarketPlace/images/logo.png" />
-<meta property="twitter:title" content="DN Market Place" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2022-11-02T00:00:00-05:00" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="Post Listings" />
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"WebSite","description":"This website is made by Scrum Team Women in STEM with members Pranavi Inukurti, Shraddha Kadaba, Meena Annamalai, and Madhumita Narayan.","headline":"DN Market Place","image":"https://pranaviinukurti.github.io/DelNorteMarketPlace/images/logo.png","name":"DN Market Place","url":"https://pranaviinukurti.github.io/DelNorteMarketPlace/"}</script>
+{"@context":"https://schema.org","@type":"BlogPosting","dateModified":"2022-11-02T00:00:00-05:00","datePublished":"2022-11-02T00:00:00-05:00","description":"Post Listings","headline":"Post Listings","mainEntityOfPage":{"@type":"WebPage","@id":"https://pranaviinukurti.github.io/DelNorteMarketPlace/2022/11/02/dnPostTest.html"},"url":"https://pranaviinukurti.github.io/DelNorteMarketPlace/2022/11/02/dnPostTest.html"}</script>
 <!-- End Jekyll SEO tag -->
 <link rel="stylesheet" href="/DelNorteMarketPlace/assets/css/style.css"><link type="application/atom+xml" rel="alternate" href="https://pranaviinukurti.github.io/DelNorteMarketPlace/feed.xml" title="DN Market Place" /><link rel="shortcut icon" type="image/x-icon" href="/DelNorteMarketPlace/images/favicon.ico"><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Primer/15.2.0/primer.css" integrity="sha512-xTz2ys4coGAOz8vuV1NcQBkgVmKhsSEtjbqyMJbBHRplFuvKIUo6xhLHpAyPt9mfR6twHJgn9OgVLuqOvjeBhg==" crossorigin="anonymous" />
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog==" crossorigin="anonymous" />
@@ -71,58 +70,45 @@ window.onload = wrap_img;
 </header>
 <main class="page-content" aria-label="Content">
       <div class="wrapper">
-        <div class="home"><p><img src="images/welcometodnmarketplace.png" /></p>
+        <html>
+<body>
+  <form onsubmit="javascript:handleClick();return false">
+  <label for="object">Object:</label>
+  <input type="text" id="object" name="object" /><br /><br />
+  <label for="price">Price:</label>
+  <input type="text" id="price" name="price" /><br /><br />
+  <label for="seller">Seller:</label>
+  <input type="text" id="seller" name="seller" /><br /><br />
+  <label for="imageURL">Image URL:</label>
+  <input type="text" id="imageURL" name="imageURL" /><br /><br />
+  <input type="submit" value="Submit" />
+</form>
+</body>
+<script>
+	function handleClick() {
+	
+		if (window.confirm('Click ok to view your listing')) 
+		{
+		window.location.href='https://mann223.github.io/fastpages/2022/10/01/dnMarketPlace.html';
+		};;
+	
+	console.log("test");
+		var requestOptions = {
+		method: 'POST',
+		redirect: 'follow'
+		};
+		
+		const item = document.getElementById("object").value;
+		const price = document.getElementById("price").value;
+		const seller = document.getElementById("seller").value;
+		const imageURL = '&url=' + encodeURIComponent(document.getElementById("imageURL").value);
+		
 
-<p>This website is made by Scrum Team Women in STEM with members Pranavi Inukurti, Shraddha Kadaba, Meena Annamalai, and Madhumita Narayan.</p>
+		fetch(`https://womeninstem.tk/api/listings/create/${item}/${price}/${seller}/${imageURL}`, requestOptions)
+	}
+</script>
+</html>
 
-<h1 id="announcements">Announcements</h1>
-
-
-
-  
-
-  <!-- Hide posts if front matter flag hide:true -->
-  
-  
-
-  <!-- Sort posts by rank, then date -->
-  
-  
-  
-
- 
-  
-
-   <!-- Assemble final sorted posts array -->
-  
-  <ul class="post-list"><li><h3>
-    <a class="post-link" href="/DelNorteMarketPlace/2022/11/02/dnmarketplace.html">
-    Add Listing
-    </a>
-</h3><p class="post-meta-description">Fetch listing data from backend</p><p class="post-meta">Nov 2, 2022</p>
-</li><li><h3>
-    <a class="post-link" href="/DelNorteMarketPlace/2022/11/02/dnPostTest.html">
-    Post Listings
-    </a>
-</h3><p class="post-meta-description">Post Listings</p><p class="post-meta">Nov 2, 2022</p>
-</li><li><h3>
-    <a class="post-link" href="/DelNorteMarketPlace/markdown/2022/11/01/navigation-help.html">
-    Welcome to Del Norte MarketPlace!
-    </a>
-</h3><p class="post-meta-description">A post to help with navigation in our website</p><p class="post-meta">Nov 1, 2022</p>
-</li><li><h3>
-    <a class="post-link" href="/DelNorteMarketPlace/markdown/2022/10/31/announcement-two.html">
-    Unused AP Bio Prep Book
-    </a>
-</h3><p class="post-meta-description">Ace the AP Exam!</p><p class="post-meta">Oct 31, 2022</p>
-</li><li><h3>
-    <a class="post-link" href="/DelNorteMarketPlace/markdown/2022/10/31/announcement-one.html">
-    Secondhand Graphing Calculator
-    </a>
-</h3><p class="post-meta-description">Lightly used. Perfect for AP Stats.</p><p class="post-meta">Oct 31, 2022</p>
-</li></ul>
-
-    </div>
       </div>
     </main><footer class="site-footer h-card">
   <data class="u-url" href="/DelNorteMarketPlace/"></data>
