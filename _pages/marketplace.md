@@ -38,8 +38,8 @@ ul {
 <h1>Market Place</h1>
 <div id="listings" class="grid-container">
 </div>
-</ul>
-</div>
+
+
 <script>
   const resultContainer = document.getElementById('listings');
   const url = 'https://womeninstem.tk/api/listings/';
@@ -75,7 +75,7 @@ ul {
       console.log(error);
     });
 
-    
+
 </script>
 </body>
 </html>
