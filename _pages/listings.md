@@ -1,7 +1,7 @@
 ---
 layout: page
-title: Add Listing Notification
-permalink: /notification/
+title: Listings
+permalink: /listings/
 ---
 
 <html>
