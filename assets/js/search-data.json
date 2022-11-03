@@ -75,7 +75,7 @@
   
       ,"page5": {
           "title": "Post Listings",
-          "content": "Object: Price: Seller: Contact Info: .",
+          "content": "Object: Price (no decimals): Seller: Contact Info: .",
           "url": "https://pranaviinukurti.github.io/DelNorteMarketPlace/dnPostTest/",
           "relUrl": "/dnPostTest/",
           "date": ""
