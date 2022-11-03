@@ -40,7 +40,7 @@
   
       ,"page1": {
           "title": "Add Listing",
-          "content": "",
+          "content": "Object: Price: Seller: Image URL: .",
           "url": "https://pranaviinukurti.github.io/DelNorteMarketPlace/AddListing/",
           "relUrl": "/AddListing/",
           "date": ""
@@ -94,17 +94,6 @@
   
 
   
-      ,"page10": {
-          "title": "Supplies",
-          "content": "",
-          "url": "https://pranaviinukurti.github.io/DelNorteMarketPlace/supplies/",
-          "relUrl": "/supplies/",
-          "date": ""
-      }
-      
-  
-
-  
 
   
   
@@ -116,7 +105,7 @@
   
 
   
-      ,"page15": {
+      ,"page14": {
           "title": "",
           "content": "Sitemap: {{ “sitemap.xml” | absolute_url }} | .",
           "url": "https://pranaviinukurti.github.io/DelNorteMarketPlace/robots.txt",
