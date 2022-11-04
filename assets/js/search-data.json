@@ -88,7 +88,7 @@
   
       ,"page7": {
           "title": "Market Place",
-          "content": "Market Place . .",
+          "content": "Market Place . &lt;/ul&gt; &lt;/div&gt; .",
           "url": "https://pranaviinukurti.github.io/DelNorteMarketPlace/marketplace/",
           "relUrl": "/marketplace/",
           "date": ""
