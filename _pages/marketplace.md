@@ -6,17 +6,19 @@ permalink: /marketplace/
 
 <html>
 <style>
-
+@import url('https://fonts.googleapis.com/css?family=Poppins&display=swap');
 
 ul {
     list-style-type: none;
 }
+
 .grid-container {
   display: grid;
   grid-template-columns: auto auto;
   gap: 10px;
   grid-auto-rows: minmax(100px, auto);
 }
+
 .card {
 	background-color: white;
 	color: #045D5D;
@@ -24,6 +26,10 @@ ul {
 	  transition: 0.3s;
 	  width: 75%;
 	padding: 40px;
+}
+
+.cardHeading {
+	font-family: 'Poppins';
 }
 
 .card:hover {
@@ -38,7 +44,8 @@ ul {
 <h1>Market Place</h1>
 <div id="listings" class="grid-container">
 </div>
-
+</ul>
+</div>
 
 <script>
   const resultContainer = document.getElementById('listings');
@@ -53,6 +60,7 @@ ul {
         let listingCard = document.createElement('div');
 		listingCard.setAttribute("class", "card");
         let name = document.createElement('h1');
+		name.setAttribute("class", "cardHeading");
         let price = document.createElement('p');
         let seller = document.createElement('p');
         let image = document.createElement('p');
@@ -75,7 +83,7 @@ ul {
       console.log(error);
     });
 
-
+ 
 </script>
 </body>
 </html>
